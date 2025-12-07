@@ -85,7 +85,7 @@ const products = [
 
 export default function ProductCard() {
   return (
-    <div className="max-w-[1560px] mx-auto px-4 sm:px-4 lg:px-0 py-8 cursor-pointer">
+    <div className="max-w-[1560px] mx-auto px-8 sm:px-4 lg:px-8 py-8 cursor-pointer">
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.map((product) => (
           <div
