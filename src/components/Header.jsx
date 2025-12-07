@@ -8,11 +8,11 @@ export default function Header() {
     <>
       <div className="fixed top-0 left-0 w-full z-50">
         <BannerTicker />
-        <header className="w-full bg-white shadow-sm h-[70px] lg:h-[140px] flex items-center relative overflow-hidden">
+        <header className="w-full bg-white shadow-sm h-[70px] lg:h-[70px] flex items-center relative overflow-hidden">
           <div className="max-w-[1400px] mx-auto flex items-center justify-center w-full px-4 lg:px-0 relative">
             {/* Mobile Back Arrow */}
             <button className="lg:hidden text-black absolute left-4">
-              <ArrowLeft size={28} strokeWidth={2} />
+              <ArrowLeft size={22} strokeWidth={2} />
             </button>
 
             {/* Logo Center */}
@@ -34,17 +34,17 @@ export default function Header() {
                   placeholder="Search for a product"
                   className="absolute right-full mr-2 w-0 opacity-0 group-hover:opacity-100 group-hover:w-56 transition-all duration-200 border-b border-gray-700 bg-transparent outline-none px-2 py-1 text-[20px]"
                 />
-                <Search size={26} className="cursor-pointer" />
+                <Search size={22} className="cursor-pointer" />
               </div>
 
               <Link to="/wishlist">
-                <Heart size={26} />
+                <Heart size={22} />
               </Link>
               <Link to="/account">
-                <User size={26} />
+                <User size={22} />
               </Link>
               <Link to="/cart">
-                <ShoppingBag size={26} />
+                <ShoppingBag size={22} />
               </Link>
             </div>
 
@@ -56,10 +56,10 @@ export default function Header() {
                   placeholder="Search for a product"
                   className="absolute right-full mr-2 w-0 opacity-0 group-hover:opacity-100 group-hover:w-46 transition-all duration-200 border-b border-gray-700 bg-transparent outline-none px-2 py-1 text-sm"
                 />
-                <Search size={26} className="cursor-pointer" />
+                <Search size={22} className="cursor-pointer" />
               </div>
               <Link to="/cart">
-                <ShoppingBag size={26} />
+                <ShoppingBag size={22} />
               </Link>
             </div>
           </div>
