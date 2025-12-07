@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <div className="fixed top-0 left-0 w-full z-50">
         <BannerTicker />
-        <header className="w-full bg-white shadow-sm h-[80px] lg:h-[140px] flex items-center relative overflow-hidden">
+        <header className="w-full bg-white shadow-sm h-[70px] lg:h-[140px] flex items-center relative overflow-hidden">
           <div className="max-w-[1400px] mx-auto flex items-center justify-center w-full px-4 lg:px-0 relative">
             {/* Mobile Back Arrow */}
             <button className="lg:hidden text-black absolute left-4">
