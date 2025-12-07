@@ -47,7 +47,7 @@ export default function StorySection() {
           <img
             src="https://img.clevup.in/463263/static/handcrafted.png"
             alt="Handcrafted clothing"
-            className="w-full h-[460px] object-cover"
+            className="w-full h-[360px] object-cover"
           />
         </div>
       </div>
