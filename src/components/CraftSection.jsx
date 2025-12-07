@@ -2,12 +2,12 @@ export default function CraftSection() {
   return (
     <section className="m-full  mx-auto px-4 py-16 text-center bg-[#faf7ee]">
       {/* Main heading */}
-      <a className=" sm:text-[20px] md:text-5xl font-sans font-extrabold text-gray-900">
+      <a className=" sm:text-3xl  md:text-5xl font-sans font-extrabold text-gray-900">
         Consciously Crafted. Timeless by Design.
       </a>
 
       {/* Sub text */}
-      <p className="text-gray-500 mt-4 max-w-3xl mx-auto .name-font text-2xl">
+      <p className="text-gray-500 mt-4 max-w-3xl mx-auto .name-font text-xl">
         Rooted in conscious design and timeless tradition, our garments are
         lovingly handmade by skilled artisans—blending ethical craftsmanship
         with modern elegance. From natural fabrics to the final stitch, we
@@ -22,10 +22,10 @@ export default function CraftSection() {
             <img
               src="https://img.clevup.in/438426/static/homemade-stamp.png"
               alt="Handmade"
-              className="w-[280px] h-70 opacity-90"
+              className="w-[200px] h-45 opacity-90"
             />
           </div>
-          <h3 className="text-3xl font-extrabold .name-font mt-5">
+          <h3 className="text-2xl font-extrabold .name-font mt-5">
             Handmade by Artisans
           </h3>
           <p className="text-gray-500  text-xl  .name-font mt-3">
@@ -39,10 +39,10 @@ export default function CraftSection() {
             <img
               src="https://img.clevup.in/438426/static/natural-fabric-stamp.png"
               alt="Natural Fabrics"
-              className="w-[280px] h-70 opacity-90"
+              className="w-[200px] h-45 opacity-90"
             />
           </div>
-          <h3 className="text-3xl font-extrabold  .name-font mt-5">
+          <h3 className="text-2xl font-extrabold  .name-font mt-5">
             Natural Fabrics
           </h3>
           <p className="text-gray-500  text-xl .name-font mt-3">
@@ -56,10 +56,10 @@ export default function CraftSection() {
             <img
               src="https://img.clevup.in/438426/static/ethical-fashion-stamp.png"
               alt="Ethical Fashion"
-              className="w-[280px] h-70 opacity-90 "
+              className="w-[200px] h-45 opacity-90 "
             />
           </div>
-          <h3 className="text-3xl font-extrabold   .name-font mt-5">
+          <h3 className="text-2xl font-extrabold   .name-font mt-5">
             Ethical Slow Fashion
           </h3>
           <p className="text-gray-500  text-xl .name-font mt-3">

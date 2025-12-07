@@ -9,7 +9,7 @@ export default function StorySection() {
             Every thread tells a story.
           </p>
 
-          <h1 className=" sm:text-[45px] md:text-[45px] lg:text-[50px] font-sans font-extrabold text-gray-900 leading-tight mt-4">
+          <h1 className=" sm:text-3xl md:text-[60px] lg:text-5xl font-sans font-extrabold text-gray-900 leading-tight mt-4">
             A sustainable clothing <br />
             handcrafted with <br />
             precision and love
@@ -19,14 +19,14 @@ export default function StorySection() {
             Wear what matters.
           </h3>
 
-          <p className="mt-4 text-xl leading-relaxed text-gray-600 name-font">
+          <p className="mt-4 text-lg leading-relaxed text-gray-600 name-font">
             Rooted in conscious design and timeless tradition, our garments are
             lovingly handmade by skilled artisans—blending ethical craftsmanship
             with modern elegance. From natural fabrics to the final stitch, we
             honour both people and the planet.
           </p>
 
-          <p className="mt-4 text-xl leading-relaxed text-gray-600 name-font">
+          <p className="mt-4 text-lg leading-relaxed text-gray-600 name-font">
             Explore collections that celebrate sustainability, authenticity, and
             slow fashion—made to last, made to love.
           </p>
