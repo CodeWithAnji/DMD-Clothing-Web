@@ -114,22 +114,23 @@ export default function ProductCard() {
             {/* Product info */}
             <div className=" product-card p-3 font-sans">
               {/* Product Name */}
-              <h2 className="sm:text-[18px] lg:text-[20px] ">{product.name}</h2>
+              <h2 className="sm:text-[20px] lg:text-[20px] ">{product.name}</h2>
 
               {/* Rating */}
               <div className="flex items-center mt-2 space-x-1">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
-                    size={25}
-                    className={
+                    className={`w-6 h-6 md:w-7 md:h-7 ${
                       i < Math.floor(product.rating)
                         ? "text-yellow-500 fill-yellow-500"
                         : "text-gray-300 fill-gray-300"
-                    }
+                    }`}
                   />
                 ))}
-                <span className="text-xl text-gray-700 ml-1">{`(${product.sold})`}</span>
+                <span className=" text-md text-gray-700 ml-1">
+                  {`(${product.sold})`}
+                </span>
               </div>
 
               {/* Price */}
