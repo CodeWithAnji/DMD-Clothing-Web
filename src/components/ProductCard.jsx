@@ -85,60 +85,65 @@ const products = [
 
 export default function ProductCard() {
   return (
-    <div className="max-w-[1560px] mx-auto px-8 sm:px-4 lg:px-8 py-8 cursor-pointer">
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="max-w-[1560px] mx-auto px-2 sm:px-4 md:px-6 lg:px-10 py-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
         {products.map((product) => (
           <div
             key={product.id}
-            className="bg-white shadow-sm r relative group overflow-hidden"
+            className="bg-white shadow-sm relative group overflow-hidden rounded-lg"
           >
             {/* Discount badge */}
-            <span className="absolute top-0 left-0 bg-amber-600 text-white text-xl px-3 font-semibold py-2 sm:w-[120px] h-[50px] ">
+            <span className="absolute top-0 left-0 bg-amber-600 text-white text-sm sm:text-base md:text-lg lg:text-xl px-2 sm:px-3 md:px-4 py-1 sm:py-2 font-semibold">
               {product.discount}
             </span>
+
             {/* Heart icon */}
-            <button className="absolute top-4 right-2 bg-white w-[40px] h-[40px] rounded-full flex items-center justify-center text-gray-700 hover:bg-gray-200 cursor-pointer  transition">
-              <Heart size={25} />
+            <button className="absolute top-2 right-2 bg-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-gray-700 hover:bg-gray-200 transition">
+              <Heart className="w-4 h-4 sm:w-6 sm:h-6" />
             </button>
-            {/* Product image */}
+
+            {/* Product images */}
             <img
-              src={product.image1 || product.image}
+              src={product.image1}
               alt={product.name}
-              className="w-full sm:h-[450px] lg:h-[650px] object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+              className="w-full h-[300px] sm:h-[380px] md:h-[450px] lg:h-[550px] xl:h-[650px] object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
             />
+
             <img
-              src={product.image2 || product.image}
+              src={product.image2}
               alt={product.name}
-              className="absolute top-0 left-0 w-full sm:h-[450px] lg:h-[650px] object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+              className="absolute top-0 left-0 w-full h-[300px] sm:h-[380px] md:h-[450px] lg:h-[550px] xl:h-[650px] object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
             />
-            {/* Product info */}
-            <div className=" product-card p-3 font-sans">
-              {/* Product Name */}
-              <h2 className="sm:text-[20px] lg:text-[20px] ">{product.name}</h2>
+
+            {/* Product Info */}
+            <div className="p-2 sm:p-3 font-sans">
+              <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-tight">
+                {product.name}
+              </h2>
 
               {/* Rating */}
               <div className="flex items-center mt-2 space-x-1">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
-                    className={`w-6 h-6 md:w-7 md:h-7 ${
+                    className={`w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7 ${
                       i < Math.floor(product.rating)
                         ? "text-yellow-500 fill-yellow-500"
                         : "text-gray-300 fill-gray-300"
                     }`}
                   />
                 ))}
-                <span className=" text-md text-gray-700 ml-1">
-                  {`(${product.sold})`}
+                <span className="text-xs sm:text-sm md:text-base text-gray-700 ml-1">
+                  ({product.sold})
                 </span>
               </div>
 
               {/* Price */}
               <div className="flex items-center space-x-2 mt-2">
-                <span className=" text-gray-600 text-[20px]">
+                <span className="text-base sm:text-lg md:text-xl text-gray-600">
                   ₹ {product.price}
                 </span>
-                <span className="text-gray-400 line-through text-[17px]">
+                <span className="text-sm sm:text-base md:text-lg text-gray-400 line-through">
                   ₹ {product.oldPrice}
                 </span>
               </div>
