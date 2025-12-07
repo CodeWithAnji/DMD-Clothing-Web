@@ -3,9 +3,9 @@ export default function Review() {
     <section className="w-full bg-white py-12 px-4 sm:px-6 lg:px-4">
       <h1 className="text-3xl font-semibold mb-4">#What our customers says</h1>
 
-      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-1 lg:flex justify-between items-stretch gap-6">
+      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-1 lg:flex justify-between items-stretch gap-6 ">
         {/* Card 1 */}
-        <div className="flex-1 p-8 text-center bg-gray-100 sm:h-[400px] lg:h-[400px]">
+        <div className="flex-1 p-8 text-center bg-gray-100 ">
           <div className="text-[100px] text-gray-700 title-font">“</div>
           <h3 className="text-xl font-semibold text-gray-900">Rakesh Kapoor</h3>
           <p className="text-lg text-gray-600 mb-8 mt-8 italic">
